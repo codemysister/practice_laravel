@@ -1,4 +1,7 @@
+<!-- untuk merujuk kepada file parent -->
 @extends('layout.app')
+
+<!-- untuk menampilkan konten ke parent -->
 @section('title')
 Halaman About
 @endsection

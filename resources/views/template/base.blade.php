@@ -26,6 +26,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
+                                <!-- 2 kurung kurawal untuk redirect ke route -->
                                 <a class="nav-link active" aria-current="page" href="{{ route('index')}}">Beranda</a>
                                 <a class="nav-link" href="#">Mahasiswa</a>
                                 <a class="nav-link" href="{{ route('about')}}">About</a>
@@ -42,6 +43,7 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
+                        <!-- untuk menampilkan konten dari file yg mengextends file ini -->
                         @yield('content')
                     </div>
                 </div>
