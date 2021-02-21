@@ -20,3 +20,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'MyController@index')->name('index');
 Route::get('/tentang', 'MyController@about')->name('about');
+Route::get('/mahasiswa', 'StudentController@index')->name('student.index');
+Route::get('/mahasiswa/tambah', 'StudentController@create')->name('student.create');
+Route::post('/mahasiswa/tambah', 'StudentController@store')->name('student.store');
+Route::get('/mahasiswa/edit/{id}', 'StudentController@edit')->name('student.edit');
+Route::put('/mahasiswa/edit/{id}', 'StudentController@update')->name('student.update');
+Route::delete('/mahasiswa/hapus/{id}', 'StudentController@destroy')->name('student.destroy');
